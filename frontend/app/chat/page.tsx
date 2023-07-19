@@ -50,8 +50,8 @@ export default function ChatPage() {
     <main className="min-h-screen w-full flex flex-col pt-20">
       <section className="flex flex-col justify-center items-center flex-1 gap-5 h-full">
         <PageHeading
-          title="Chat with your brain"
-          subtitle="Your AI assistant"
+          title="Chat with your documents "
+          // subtitle="Your AI assista"
         />
         {/* Chat */}
         <Card className="p-5 max-w-3xl w-full min-h-full flex-1 mb-24">
@@ -73,17 +73,17 @@ export default function ChatPage() {
                 placeholder="Enter your question here..."
               />
               <Button type="submit" isLoading={isPending}>
-                {isPending ? "Thinking..." : "Ask"}
+                {isPending ? "Processing..." : "Ask"}
               </Button>
               {/* Settings Button */}
-              <Modal
+              {/* <Modal
                 Trigger={
                   <Button className="px-3" variant={"tertiary"}>
                     <MdSettings className="text-2xl" />
                   </Button>
                 }
                 title="Settings"
-                desc="Modify your brain"
+                desc="Modify"
               >
                 <form className="flex flex-col gap-5 py-5">
                   <fieldset className="w-full flex">
@@ -132,7 +132,7 @@ export default function ChatPage() {
                     />
                   </fieldset>
                 </form>
-              </Modal>
+              </Modal> */}
             </form>
           </Card>
         </Card>

@@ -11,28 +11,29 @@ const NavItems: FC<NavItemsProps> = ({ className, ...props }) => {
     // <div className={cn("flex flex-1 items-center", className)} {...props}>
     <ul
       className={cn(
-        "flex flex-row items-center gap-4 text-sm flex-1",
+        "flex flex-row items-center gap-4 text-sm flex-2",
         className
       )}
       {...props}
     >
       {process.env.NEXT_PUBLIC_ENV === "local" ? (
         <>
-          <NavLink to="/upload">Upload</NavLink>
+
           <NavLink to="/chat">Chat</NavLink>
-          <NavLink to="/explore">Explore</NavLink>
+          <NavLink to="/upload">UploadDoc</NavLink>
+          <NavLink to="/explore">DataSet</NavLink>
         </>
       ) : (
         <>
-          <NavLink to="https://github.com/StanGirard/quivr">Github</NavLink>
-          <NavLink to="https://discord.gg/HUpRgp2HG8">Discord</NavLink>
+          {/* <NavLink to="https://github.com/StanGirard/quivr">Github</NavLink>
+          <NavLink to="https://discord.gg/HUpRgp2HG8">Discord</NavLink> */}
         </>
       )}
       <div className="flex sm:flex-1 sm:justify-end flex-col items-center justify-center sm:flex-row gap-5 sm:gap-2">
-        <Link href={"https://try-quivr.streamlit.app"}>
+        {/* <Link href={"https://try-quivr.streamlit.app"}>
           <Button variant={"secondary"}>Try Demo</Button>
-        </Link>
-        <DarkModeToggle />
+        </Link> */}
+        {/* <DarkModeToggle /> */}
       </div>
     </ul>
     // </div>

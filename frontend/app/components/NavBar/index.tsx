@@ -47,7 +47,7 @@ const NavBar: FC<NavBarProps> = ({}) => {
             width={48}
             height={48}
           />
-          <h1 className="font-bold">Quivr</h1>
+          <h1 className="font-bold">XgenDoc</h1>
         </Link>
         <NavItems className="hidden sm:flex" />
         <MobileMenu />

@@ -32,9 +32,9 @@ const MobileMenu: FC<MobileMenuProps> = ({}) => {
                     <NavItems className="text-3xl h-fit text-center flex-col items-center justify-center gap-10" />
 
                     <p className="">
-                      Get a Second Brain with{" "}
+                      2023 copyright{" "}
                       <span className="text-primary dark:bg-white rounded-sm">
-                        Quivr
+                        XgenDoc
                       </span>
                     </p>
 

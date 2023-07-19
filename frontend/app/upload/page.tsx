@@ -82,7 +82,7 @@ export default function UploadPage() {
 
   const onDrop = (acceptedFiles: File[], fileRejections: FileRejection[]) => {
     if (fileRejections.length > 0) {
-      setMessage({ type: "error", text: "File too big." });
+      setMessage({ type: "error", text: "File is large not accepted." });
       return;
     }
     setMessage(null);
@@ -125,8 +125,8 @@ export default function UploadPage() {
         className="w-full outline-none pt-20 flex flex-col gap-5 items-center justify-center p-6"
       >
         <PageHeading
-          title="Add Knowledge"
-          subtitle="Upload files to your second brain"
+          title="Add your Documents - Text- PDF- PPt- Excel- Word"
+          subtitle="Upload files in above formats and ask any question from the given dataset you want"
         />
         {/* Wrap the cards in a flex container */}
         <div className="flex justify-center gap-5">
@@ -153,13 +153,13 @@ export default function UploadPage() {
                   onClick={open}
                   className="opacity-50 cursor-pointer hover:opacity-100 hover:underline transition-opacity"
                 >
-                  Drag and drop some files here, or click to browse files
+                  Drag and drop or click to browse 
                 </button>
               )}
             </div>
           </Card>
           {/* Assign a width of 50% to each card */}
-          <Card className="w-1/2">
+          {/* <Card className="w-1/2">
             <div className="text-center mt-2 p-6 max-w-sm w-full flex flex-col gap-5 items-center">
               <input
                 ref={urlInputRef}
@@ -174,7 +174,7 @@ export default function UploadPage() {
                 Crawl Website
               </button>
             </div>
-          </Card>
+          </Card> */}
         </div>
         <div className="flex flex-col items-center justify-center gap-5">
           <Button isLoading={isPending} onClick={uploadAllFiles} className="">
@@ -182,7 +182,7 @@ export default function UploadPage() {
           </Button>
           <Link href={"/chat"}>
             <Button variant={"secondary"} className="py-3">
-              Start Chatting with your brain
+              Start Chatting with your training Documents.
             </Button>
           </Link>
         </div>
