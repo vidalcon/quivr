@@ -8,10 +8,7 @@
 <a href="https://discord.gg/HUpRgp2HG8">
   <img src="https://img.shields.io/badge/discord-join%20chat-blue.svg" alt="Join our Discord" height="40">
 </a>
-</div>
-
-Quivr, your second brain, utilizes the power of GenerativeAI to store and retrieve unstructured information. Think of it as Obsidian, but turbocharged with AI capabilities.
-
+</div
 ## Key Features 🎯
 
 - **Universal Data Acceptance**: Quivr can handle almost any type of data you throw at it. Text, images, code snippets, we've got you covered.
@@ -85,9 +82,10 @@ cp .backend_env.example backend/.env
 cp .frontend_env.example frontend/.env
 ```
 
-- **Step 3**: Update the `backend/.env` file 
+- **Step 3**: Update the `backend/.env` and `frontend/.env` file 
 
 > _Your `supabase_service_key` can be found in your Supabase dashboard under Project Settings -> API. Use the `anon` `public` key found in the `Project API keys` section._
+> _Your  `JWT_SECRET_KEY`can be found in your supabase settings under Project Settings -> JWT Settings -> JWT Secret_
 
 - **Step 4**: Run the following migration scripts on the Supabase database via the web interface (SQL Editor -> `New query`)
 

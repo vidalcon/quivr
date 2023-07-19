@@ -22,17 +22,18 @@ const NavItems: FC<NavItemsProps> = ({ className, ...props }) => {
           <NavLink to="/chat">Chat</NavLink>
           <NavLink to="/upload">UploadDoc</NavLink>
           <NavLink to="/explore">DataSet</NavLink>
+         
         </>
       ) : (
         <>
-          {/* <NavLink to="https://github.com/StanGirard/quivr">Github</NavLink>
-          <NavLink to="https://discord.gg/HUpRgp2HG8">Discord</NavLink> */}
+          {/* <NavLink to="https://xgenplus.com">XgenPlus</NavLink>
+ */}
         </>
       )}
       <div className="flex sm:flex-1 sm:justify-end flex-col items-center justify-center sm:flex-row gap-5 sm:gap-2">
-        {/* <Link href={"https://try-quivr.streamlit.app"}>
-          <Button variant={"secondary"}>Try Demo</Button>
-        </Link> */}
+        <Link href={"https://try-quivr.streamlit.app"}>
+          <Button variant={"secondary"}>LogOut</Button>
+        </Link>
         {/* <DarkModeToggle /> */}
       </div>
     </ul>
