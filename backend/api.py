@@ -1,10 +1,7 @@
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi import FastAPI, UploadFile, File, HTTPException, Header, Depends
-from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
+from fastapi import FastAPI, UploadFile, Depends
 import os
-from pydantic import BaseModel
-from typing import List, Tuple, Annotated
-from supabase import create_client, Client
+from supabase import Client
 from tempfile import SpooledTemporaryFile
 from auth_bearer import JWTBearer
 import shutil

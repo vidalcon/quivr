@@ -1,13 +1,12 @@
 "use client";
-import Link from "next/link";
-import { FC, useRef } from "react";
-import Button from "../components/ui/Button";
-import { MdNorthEast } from "react-icons/md";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
+import Link from "next/link";
+import { useRef } from "react";
+import { MdNorthEast } from "react-icons/md";
 
-interface HeroProps {}
+import Button from "@/lib/components/ui/Button";
 
-const Hero: FC<HeroProps> = ({}) => {
+const Hero = (): JSX.Element => {
   const targetRef = useRef<HTMLDivElement | null>(null);
   const { scrollYProgress } = useScroll({
     target: targetRef,
@@ -21,6 +20,7 @@ const Hero: FC<HeroProps> = ({}) => {
     if (pos === 1) {
       return "relative";
     }
+
     return "sticky";
   });
 
@@ -45,8 +45,8 @@ const Hero: FC<HeroProps> = ({}) => {
         <p className="text-base max-w-sm text-gray-500 mb-5 sm:mb-10">
           XgenDoc in the cloud
         </p>
-        {/* <Link href={"https://try-quivr.streamlit.app"}>
-          <Button>Try Demo</Button>
+        <Link href={"/login"}>
+          <Button>Get Started</Button>
         </Link>
         <Link target="_blank" href={""}>
           <Button variant={"tertiary"}>

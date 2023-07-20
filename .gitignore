@@ -48,5 +48,13 @@ quivr/*
 streamlit-demo/.streamlit/secrets.toml
 .backend_env
 .frontend_env
-backend/pandoc-*
-**/yarn.lock
+backend/core/pandoc-*
+**/.pandoc-*
+backend/core/application_default_credentials.json
+
+#local models
+backend/core/local_models/*
+
+
+## scripts
+.migration_info
